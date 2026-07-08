@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RxScan Paramedic - Documents légaux</title>
+
+<style>
+:root{
+    --bg:#020812;
+    --card:#081a33;
+    --border:#1d3f70;
+    --text:#ffffff;
+    --muted:#aab6d3;
+    --blue:#2f6dff;
+    --cyan:#20d4cf;
+    --purple:#7b4dff;
+}
+
+*{ margin:0; padding:0; box-sizing:border-box; }
+
+body{
+    background:
+        radial-gradient(circle at top, rgba(47,109,255,.16), transparent 35%),
+        linear-gradient(180deg, #020812 0%, #020812 100%);
+    color:var(--text);
+    font-family:Segoe UI, Arial, sans-serif;
+    min-height:100vh;
+}
+
+.container{
+    max-width:980px;
+    margin:0 auto;
+    padding:34px 20px 70px;
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.logo-img{
+    max-width:245px;
+    width:78%;
+    height:auto;
+    filter:drop-shadow(0 0 22px rgba(47,109,255,.35));
+}
+
+.subtitle{
+    color:#8ca8d8;
+    text-align:center;
+    margin:0 0 28px;
+    font-size:15px;
+    letter-spacing:.35px;
+}
+
+.language-switch{
+    width:150px;
+    margin:0 auto 34px;
+    background:#08162d;
+    border:1px solid var(--border);
+    border-radius:999px;
+    display:flex;
+    overflow:hidden;
+}
+
+.language-switch a{
+    flex:1;
+    text-align:center;
+    padding:9px 0;
+    color:white;
+    text-decoration:none;
+    font-weight:800;
+    font-size:14px;
+}
+
+.language-switch a.active{
+    background:var(--blue);
+}
+
+.title{
+    margin-bottom:26px;
+}
+
+.title h1{
+    font-size:38px;
+    line-height:1.15;
+}
+
+.title p{
+    color:var(--muted);
+    margin-top:6px;
+    font-size:18px;
+}
+
+.info-card{
+    background:rgba(8,26,51,.92);
+    border:1px solid var(--border);
+    border-radius:22px;
+    padding:24px;
+    margin-bottom:24px;
+    box-shadow:0 12px 30px rgba(0,0,0,.22);
+}
+
+.info-card strong{
+    display:block;
+    margin-bottom:8px;
+    font-size:18px;
+}
+
+.info-card p{
+    color:var(--muted);
+    font-size:16px;
+}
+
+.doc-card{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    background:rgba(8,26,51,.92);
+    border:1px solid var(--border);
+    border-radius:22px;
+    padding:22px;
+    margin-bottom:16px;
+    text-decoration:none;
+    box-shadow:0 12px 30px rgba(0,0,0,.20);
+}
+
+.doc-card:hover{
+    border-color:#4da3ff;
+    transform:translateY(-2px);
+    transition:.18s;
+}
+
+.icon{
+    width:68px;
+    height:68px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    flex-shrink:0;
+    box-shadow:0 0 24px rgba(47,109,255,.25);
+}
+
+.icon svg{
+    width:34px;
+    height:34px;
+    stroke:white;
+    stroke-width:2.3;
+    fill:none;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+
+.blue{ background:linear-gradient(135deg,#294eff,#2f8dff); }
+.cyan{ background:linear-gradient(135deg,#0b8f91,#27ddd5); }
+.purple{ background:linear-gradient(135deg,#5b35d8,#8c55ff); }
+
+.doc-content{ flex:1; }
+
+.doc-content h3{
+    color:white;
+    font-size:25px;
+    margin-bottom:4px;
+}
+
+.doc-content p{
+    color:var(--muted);
+    font-size:16px;
+}
+
+.arrow{
+    font-size:40px;
+    color:#4da3ff;
+    padding-left:10px;
+}
+
+.footer-card{
+    margin-top:34px;
+    background:rgba(8,26,51,.92);
+    border:1px solid var(--border);
+    border-radius:22px;
+    padding:24px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:24px;
+    box-shadow:0 12px 30px rgba(0,0,0,.20);
+}
+
+.footer-card h4{
+    margin-bottom:7px;
+    font-size:17px;
+}
+
+.footer-card p,
+.footer-card a{
+    color:var(--muted);
+    font-size:15px;
+    text-decoration:none;
+}
+
+.footer-card a:hover{ color:#4da3ff; }
+
+.footer{
+    text-align:center;
+    margin-top:38px;
+    color:#8894b4;
+    font-size:14px;
+}
+
+@media(max-width:700px){
+    .container{ padding:24px 14px 55px; }
+    .logo-img{ max-width:210px; }
+    .title h1{ font-size:30px; }
+    .title p{ font-size:16px; }
+    .doc-card{ padding:18px; gap:15px; }
+    .icon{ width:56px; height:56px; }
+    .icon svg{ width:28px; height:28px; }
+    .doc-content h3{ font-size:20px; }
+    .doc-content p{ font-size:14px; }
+    .arrow{ font-size:32px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">
+        <img src="logo-header-transparent.png" alt="RxScan Paramedic Logo" class="logo-img">
+    </div>
+
+    <p class="subtitle">Plateforme d'analyse médicamenteuse préhospitalière</p>
+
+    <div class="language-switch">
+        <a class="active" href="index-fr.html">FR</a>
+        <a href="index-en.html">EN</a>
+    </div>
+
+    <div class="title">
+        <h1>Documents légaux</h1>
+        <p>Veuillez consulter les documents ci-dessous.</p>
+    </div>
+
+    <div class="info-card">
+        <strong>Ces documents sont importants et doivent être lus attentivement.</strong>
+        <p>
+            Ils définissent les conditions d'utilisation, la confidentialité des données,
+            les responsabilités de l'utilisateur et les limites cliniques de l'application RxScan Paramedic, développée et exploitée par RxScan Technologies Inc.
+        </p>
+    </div>
+
+    <a class="doc-card" href="conditions-fr.html">
+        <div class="icon blue" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"></path><path d="M14 3v5h5"></path><path d="M10 13h6"></path><path d="M10 17h6"></path></svg>
+        </div>
+        <div class="doc-content">
+            <h3>Conditions d'utilisation</h3>
+            <p>Règles d'utilisation de RxScan Paramedic.</p>
+        </div>
+        <div class="arrow">›</div>
+    </a>
+
+    <a class="doc-card" href="privacy-fr.html">
+        <div class="icon cyan" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path><path d="M12 15v2"></path></svg>
+        </div>
+        <div class="doc-content">
+            <h3>Politique de confidentialité</h3>
+            <p>Collecte, utilisation et protection des données.</p>
+        </div>
+        <div class="arrow">›</div>
+    </a>
+
+    <a class="doc-card" href="clinical-fr.html">
+        <div class="icon purple" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"></path><path d="M12 8v7"></path><path d="M8.5 11.5h7"></path></svg>
+        </div>
+        <div class="doc-content">
+            <h3>Avertissement clinique</h3>
+            <p>Limites d'utilisation et responsabilités.</p>
+        </div>
+        <div class="arrow">›</div>
+    </a>
+
+    <div class="footer-card">
+        <div>
+            <h4>Version légale 1.0</h4>
+            <p>Dernière mise à jour : 17 juin 2026</p>
+        </div>
+
+        <div>
+            <h4>Nous contacter</h4>
+            <p>RxScan Technologies Inc.<br><a href="mailto:contact@rxscantechnologies.ca">contact@rxscantechnologies.ca</a></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        RxScan Paramedic™ — Données locales uniquement<br>
+        Développée et exploitée par RxScan Technologies Inc.<br>
+        © 2026 RxScan Technologies Inc. Tous droits réservés.
+    </div>
+
+</div>
+
+</body>
+</html>
