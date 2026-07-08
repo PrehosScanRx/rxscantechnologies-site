@@ -18,8 +18,8 @@ const translations = {
     missionText: "Notre mission est de développer des solutions numériques qui soutiennent une meilleure compréhension de la médication, autant pour les professionnels de la santé que pour les patients et leurs proches.",
     productsLabel: "Produits",
     productsTitle: "Un écosystème centré sur la médication.",
-    prehosStatus: "Bêta privée",
-    prehosText: "Application mobile en bêta privée destinée aux professionnels préhospitaliers. Elle aide à numériser les listes de médicaments, reconnaître les médicaments, générer un résumé clinique et produire un rapport PDF.",
+    prehosStatus: "Disponible",
+    prehosText: "Application mobile destinée aux professionnels préhospitaliers permettant de reconnaître les médicaments, d'analyser une liste de médicaments, d'identifier les principaux risques cliniques et de générer un rapport PDF.",
     guideStatus: "En développement",
     guideText: "Application compagnon en développement destinée aux patients, proches aidants et professionnels. Elle vise à rendre l'information médicamenteuse plus simple à comprendre.",
     aboutLabel: "À propos",
@@ -38,7 +38,7 @@ const translations = {
     legalText: "Les documents légaux sont organisés par produit afin de refléter les usages, limites et politiques propres à chaque application.",
     availableStatus: "Disponible",
     comingSoonStatus: "À venir",
-    guideLegalText: "Les documents légaux de Guide RxScan seront publiés lorsque le produit avancera vers une phase de test ou de distribution.",
+    guideLegalText: "Les documents légaux de RxScan Guide seront publiés lorsque le produit avancera vers une phase de test ou de distribution.",
     privacy: "Politique de confidentialité",
     terms: "Conditions d'utilisation",
     clinical: "Avertissement clinique",
@@ -72,8 +72,8 @@ const translations = {
     missionText: "Our mission is to develop digital solutions that support a better understanding of medication for healthcare professionals, patients and caregivers.",
     productsLabel: "Products",
     productsTitle: "An ecosystem focused on medication.",
-    prehosStatus: "Private beta",
-    prehosText: "Private beta mobile application for prehospital professionals. It helps capture medication lists, recognize medications, generate a clinical summary and produce a PDF report.",
+    prehosStatus: "Available",
+    prehosText: "Mobile application for prehospital professionals designed to recognize medications, analyze medication lists, identify key clinical risks and generate a PDF report.",
     guideStatus: "In development",
     guideText: "Companion application in development for patients, caregivers and professionals. It aims to make medication information easier to understand.",
     aboutLabel: "About",
@@ -92,7 +92,7 @@ const translations = {
     legalText: "Legal documents are organized by product to reflect the specific uses, limits and policies of each application.",
     availableStatus: "Available",
     comingSoonStatus: "Coming soon",
-    guideLegalText: "Guide RxScan legal documents will be published when the product moves toward testing or distribution.",
+    guideLegalText: "RxScan Guide legal documents will be published when the product moves toward testing or distribution.",
     privacy: "Privacy policy",
     terms: "Terms of use",
     clinical: "Clinical disclaimer",
@@ -111,14 +111,14 @@ const translations = {
 
 const legalLinks = {
   fr: {
-    privacy: "https://prehosscanrx.github.io/prehos-rxscan-legal/privacy-fr.html",
-    terms: "https://prehosscanrx.github.io/prehos-rxscan-legal/conditions-fr.html",
-    clinical: "https://prehosscanrx.github.io/prehos-rxscan-legal/clinical-fr.html"
+    privacy: "https://rxscantechnologies.ca/legal/privacy-fr.html",
+    terms: "https://rxscantechnologies.ca/legal/conditions-fr.html",
+    clinical: "https://rxscantechnologies.ca/legal/clinical-fr.html"
   },
   en: {
-    privacy: "https://prehosscanrx.github.io/prehos-rxscan-legal/privacy-en.html",
-    terms: "https://prehosscanrx.github.io/prehos-rxscan-legal/conditions-en.html",
-    clinical: "https://prehosscanrx.github.io/prehos-rxscan-legal/clinical-en.html"
+    privacy: "https://rxscantechnologies.ca/legal/privacy-en.html",
+    terms: "https://rxscantechnologies.ca/legal/conditions-en.html",
+    clinical: "https://rxscantechnologies.ca/legal/clinical-en.html"
   }
 };
 
