@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Suppression des données - RxScan Paramedic</title>
+
+<style>
+:root{
+    --bg:#020812;
+    --card:#081a33;
+    --border:#1d3f70;
+    --text:#ffffff;
+    --muted:#aab6d3;
+    --blue:#2f6dff;
+    --cyan:#20d4cf;
+    --purple:#7b4dff;
+}
+
+*{ margin:0; padding:0; box-sizing:border-box; }
+
+body{
+    background:
+        radial-gradient(circle at top, rgba(47,109,255,.16), transparent 35%),
+        linear-gradient(180deg, #020812 0%, #020812 100%);
+    color:var(--text);
+    font-family:Segoe UI, Arial, sans-serif;
+    min-height:100vh;
+}
+
+.container{
+    max-width:980px;
+    margin:0 auto;
+    padding:34px 20px 70px;
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.logo-img{
+    max-width:245px;
+    width:78%;
+    height:auto;
+    filter:drop-shadow(0 0 22px rgba(47,109,255,.35));
+}
+
+.subtitle{
+    color:#8ca8d8;
+    text-align:center;
+    margin:0 0 28px;
+    font-size:15px;
+    letter-spacing:.35px;
+}
+
+.language-switch{
+    width:150px;
+    margin:0 auto 34px;
+    background:#08162d;
+    border:1px solid var(--border);
+    border-radius:999px;
+    display:flex;
+    overflow:hidden;
+}
+
+.language-switch a{
+    flex:1;
+    text-align:center;
+    padding:9px 0;
+    color:white;
+    text-decoration:none;
+    font-weight:800;
+    font-size:14px;
+}
+
+.language-switch a.active{
+    background:var(--blue);
+}
+
+.title{
+    margin-bottom:26px;
+}
+
+.title h1{
+    font-size:38px;
+    line-height:1.15;
+}
+
+.title p{
+    color:var(--muted);
+    margin-top:6px;
+    font-size:18px;
+}
+
+.card{
+    background:rgba(8,26,51,.92);
+    border:1px solid var(--border);
+    border-radius:22px;
+    padding:24px;
+    margin-bottom:18px;
+    box-shadow:0 12px 30px rgba(0,0,0,.22);
+}
+
+.card h2{
+    font-size:23px;
+    margin-bottom:12px;
+}
+
+.card p,
+.card li{
+    color:var(--muted);
+    font-size:16px;
+    line-height:1.58;
+}
+
+.card p + p{
+    margin-top:10px;
+}
+
+.card ul,
+.card ol{
+    margin:10px 0 0 22px;
+}
+
+.card li{
+    margin-bottom:8px;
+}
+
+.card a{
+    color:#4da3ff;
+    font-weight:800;
+    text-decoration:none;
+}
+
+.card a:hover{ color:var(--cyan); }
+
+.notice{
+    border-color:rgba(32,212,207,.55);
+    background:rgba(6,57,54,.72);
+}
+
+.section{
+    scroll-margin-top:24px;
+}
+
+.footer{
+    text-align:center;
+    margin-top:38px;
+    color:#8894b4;
+    font-size:14px;
+    line-height:1.5;
+}
+
+@media(max-width:700px){
+    .container{ padding:24px 14px 55px; }
+    .logo-img{ max-width:210px; }
+    .title h1{ font-size:30px; }
+    .title p{ font-size:16px; }
+    .card{ padding:18px; }
+    .card h2{ font-size:20px; }
+    .card p,
+    .card li{ font-size:15px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">
+        <img src="legal/logo-header-transparent.png" alt="RxScan Paramedic Logo" class="logo-img">
+    </div>
+
+    <p class="subtitle">Plateforme d'analyse médicamenteuse préhospitalière</p>
+
+    <div class="language-switch">
+        <a class="active" href="#fr">FR</a>
+        <a href="#en">EN</a>
+    </div>
+
+    <section id="fr" class="section">
+        <div class="title">
+            <h1>Suppression des données — RxScan Paramedic</h1>
+            <p>Demande publique de suppression des données pour les utilisateurs de RxScan Paramedic.</p>
+        </div>
+
+        <div class="card notice">
+            <p>
+                Les utilisateurs peuvent demander la suppression des données liées à RxScan Paramedic en communiquant avec RxScan Technologies Inc.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Comment faire une demande</h2>
+            <ol>
+                <li>Envoyez un courriel à <a href="mailto:contact@rxscantechnologies.ca">contact@rxscantechnologies.ca</a>.</li>
+                <li>Indiquez <strong>Demande de suppression des données RxScan Paramedic</strong> dans l'objet du message.</li>
+                <li>Précisez l'adresse courriel utilisée dans l'application ou pour l'envoi de rapports, si applicable.</li>
+                <li>Ajoutez toute information utile permettant d'identifier les rapports ou données concernés, comme un identifiant de scan si vous en disposez.</li>
+            </ol>
+        </div>
+
+        <div class="card">
+            <h2>Données pouvant être supprimées</h2>
+            <ul>
+                <li>Rapports PDF envoyés ou conservés côté serveur, si applicables.</li>
+                <li>Données associées aux rapports transmis.</li>
+                <li>Adresses courriel utilisées pour l'envoi ou la réception de rapports, si applicables.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Données stockées localement</h2>
+            <p>
+                Les données stockées uniquement localement sur l'appareil peuvent être supprimées directement dans l'application via l'option <strong>Suppression des données</strong>, lorsque disponible, ou en désinstallant l'application.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Conservation temporaire</h2>
+            <p>
+                Certaines données minimales peuvent être conservées temporairement lorsque cela est nécessaire pour des raisons légales, de sécurité ou de conformité.
+            </p>
+        </div>
+    </section>
+
+    <section id="en" class="section">
+        <div class="title">
+            <h1>Data Deletion — RxScan Paramedic</h1>
+            <p>Public data deletion request page for RxScan Paramedic users.</p>
+        </div>
+
+        <div class="card notice">
+            <p>
+                Users may request deletion of data related to RxScan Paramedic by contacting RxScan Technologies Inc.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>How to submit a request</h2>
+            <ol>
+                <li>Send an email to <a href="mailto:contact@rxscantechnologies.ca">contact@rxscantechnologies.ca</a>.</li>
+                <li>Use <strong>RxScan Paramedic data deletion request</strong> as the subject line.</li>
+                <li>Specify the email address used in the application or for report submission, if applicable.</li>
+                <li>Include any useful information that may help identify the reports or data concerned, such as a scan identifier if available.</li>
+            </ol>
+        </div>
+
+        <div class="card">
+            <h2>Data that may be deleted</h2>
+            <ul>
+                <li>PDF reports submitted or stored server-side, if applicable.</li>
+                <li>Data associated with submitted reports.</li>
+                <li>Email addresses used to send or receive reports, if applicable.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Locally stored data</h2>
+            <p>
+                Data stored only locally on the device can be deleted directly in the application through the <strong>Data Deletion</strong> option, when available, or by uninstalling the application.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Temporary retention</h2>
+            <p>
+                Some minimal data may be retained temporarily when necessary for legal, security, or compliance reasons.
+            </p>
+        </div>
+    </section>
+
+    <div class="footer">
+        RxScan Paramedic™ — Données locales uniquement / Local data only<br>
+        Développée et exploitée par / Developed and operated by RxScan Technologies Inc.<br>
+        © 2026 RxScan Technologies Inc. Tous droits réservés / All rights reserved.
+    </div>
+
+</div>
+
+</body>
+</html>
