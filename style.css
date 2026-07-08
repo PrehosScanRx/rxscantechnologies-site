@@ -65,7 +65,7 @@ a {
 
 .nav {
   width: min(var(--max-width), calc(100% - 2rem));
-  height: 78px;
+  height: 68px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -76,7 +76,7 @@ a {
 .brand {
   display: inline-flex;
   align-items: center;
-  width: 210px;
+  width: 148px;
 }
 
 .nav-menu {
@@ -99,7 +99,9 @@ a {
 
 .language-toggle,
 .button,
-.legal-button {
+.legal-button,
+.value-card,
+.legal-product-card {
   border-radius: var(--radius);
   font-weight: 800;
   text-decoration: none;
@@ -117,7 +119,8 @@ a {
 
 .language-toggle:hover,
 .button:hover,
-.legal-button:hover {
+.legal-button:hover,
+.value-card:hover {
   transform: translateY(-2px);
 }
 
@@ -146,7 +149,7 @@ a {
 }
 
 .hero {
-  min-height: calc(100vh - 78px);
+  min-height: calc(100vh - 68px);
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, 0.85fr);
   align-items: center;
@@ -204,6 +207,9 @@ h3 {
 .hero-text,
 .section-content p,
 .product-card p,
+.value-card p,
+.section-heading p,
+.legal-product-card p,
 .contact-panel p {
   color: var(--muted);
   font-size: 1.08rem;
@@ -258,6 +264,29 @@ h3 {
 .section-heading {
   max-width: 760px;
   margin-bottom: 2rem;
+}
+
+.value-grid,
+.legal-product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.value-card,
+.legal-product-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 24px rgba(6, 39, 95, 0.08);
+}
+
+.value-card {
+  padding: 1.35rem;
+}
+
+.value-card h3,
+.legal-product-card h3 {
+  font-size: 1.35rem;
 }
 
 .product-grid {
@@ -315,13 +344,34 @@ h3 {
 
 .legal-links {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.legal-product-grid {
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  align-items: stretch;
+}
+
+.legal-product-card {
+  padding: 1.35rem;
+}
+
+.legal-card-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
   gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.muted-card {
+  background: #f9fbfd;
 }
 
 .legal-button {
-  min-height: 88px;
-  padding: 1.2rem;
+  min-height: 58px;
+  padding: 0.85rem 1rem;
   display: flex;
   align-items: center;
   color: var(--navy);
@@ -361,16 +411,39 @@ h3 {
   width: min(var(--max-width), calc(100% - 2rem));
   margin: 0 auto;
   padding: 2rem 0 3rem;
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
   color: var(--muted);
   border-top: 1px solid var(--line);
 }
 
-.footer div {
+.footer-grid {
   display: grid;
-  gap: 0.2rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.footer-grid div {
+  display: grid;
+  align-content: start;
+  gap: 0.45rem;
+}
+
+.footer h2 {
+  margin-bottom: 0.35rem;
+  color: var(--navy-deep);
+  font-size: 0.9rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.footer a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.footer a:hover,
+.footer a:focus-visible {
+  color: var(--teal-dark);
 }
 
 .footer p {
@@ -411,7 +484,7 @@ h3 {
     position: absolute;
     left: 1rem;
     right: 1rem;
-    top: 86px;
+    top: 76px;
     display: none;
     padding: 1rem;
     background: #ffffff;
@@ -428,7 +501,7 @@ h3 {
   .mission,
   .about,
   .contact-panel,
-  .footer {
+  .footer-grid {
     grid-template-columns: 1fr;
   }
 
@@ -455,19 +528,19 @@ h3 {
   }
 
   .product-grid,
-  .legal-links {
+  .value-grid,
+  .legal-product-grid {
     grid-template-columns: 1fr;
   }
 
-  .contact-panel,
-  .footer {
+  .contact-panel {
     display: grid;
   }
 }
 
 @media (max-width: 560px) {
   .brand {
-    width: 170px;
+    width: 132px;
   }
 
   .section {

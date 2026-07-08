@@ -9,7 +9,8 @@
   <meta property="og:description" content="La médication, simplifiée pour tous. Medication, simplified for everyone.">
   <meta property="og:image" content="assets/logo-rxscan-technologies.png">
   <meta property="og:type" content="website">
-  <link rel="icon" href="assets/logo-rxscan-technologies.png">
+  <link rel="icon" type="image/png" href="assets/logo-rxscan-technologies.png">
+  <link rel="apple-touch-icon" href="assets/logo-rxscan-technologies.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -42,7 +43,7 @@
         <p class="eyebrow" data-i18n="eyebrow">Québec, Canada</p>
         <h1 data-i18n="heroTitle">RxScan Technologies</h1>
         <p class="subtitle" data-i18n="heroSubtitle">La médication, simplifiée pour tous.</p>
-        <p class="hero-text" data-i18n="heroText">Nous développons des outils numériques conçus pour rendre l'information médicamenteuse plus claire, plus accessible et plus utile.</p>
+        <p class="hero-text" data-i18n="heroText">Nous développons des outils numériques qui rendent l'information médicamenteuse plus simple, plus claire et plus accessible.</p>
         <div class="actions">
           <a class="button primary" href="#products" data-i18n="heroProducts">Découvrir nos produits</a>
           <a class="button secondary" href="mailto:contact@rxscantechnologies.ca" data-i18n="heroContact">Nous contacter</a>
@@ -94,19 +95,56 @@
       <div class="section-label" data-i18n="aboutLabel">À propos</div>
       <div class="section-content">
         <h2 data-i18n="aboutTitle">Une entreprise québécoise en santé numérique.</h2>
-        <p data-i18n="aboutText">RxScan Technologies Inc. est une entreprise québécoise qui développe des outils numériques dans le domaine de la santé, avec un accent sur la médication, la clarté de l'information et la sécurité.</p>
+        <p data-i18n="aboutText">RxScan Technologies Inc. est une entreprise québécoise spécialisée dans le développement d'outils numériques destinés à améliorer la compréhension de la médication. Nos solutions s'adressent autant aux professionnels de la santé qu'aux patients et à leurs proches, avec un objectif commun : rendre l'information plus claire, plus accessible et plus utile.</p>
+      </div>
+    </section>
+
+    <section class="section reveal" id="values">
+      <div class="section-heading">
+        <div class="section-label" data-i18n="valuesLabel">Nos valeurs</div>
+        <h2 data-i18n="valuesTitle">Des produits pensés avec clarté et responsabilité.</h2>
+      </div>
+      <div class="value-grid">
+        <article class="value-card">
+          <h3 data-i18n="clarityTitle">Clarté</h3>
+          <p data-i18n="clarityText">Nous simplifions l'information complexe afin de la rendre plus facile à comprendre et à utiliser.</p>
+        </article>
+        <article class="value-card">
+          <h3 data-i18n="responsibilityTitle">Responsabilité</h3>
+          <p data-i18n="responsibilityText">La sécurité, la confidentialité et l'usage prudent de l'information sont au cœur de nos produits.</p>
+        </article>
+        <article class="value-card">
+          <h3 data-i18n="innovationTitle">Innovation</h3>
+          <p data-i18n="innovationText">Nous développons des outils concrets, utiles et pensés pour les réalités du terrain.</p>
+        </article>
       </div>
     </section>
 
     <section class="section reveal" id="legal">
       <div class="section-heading">
         <div class="section-label" data-i18n="legalLabel">Documents légaux</div>
-        <h2 data-i18n="legalTitle">Documents faciles à consulter.</h2>
+        <h2 data-i18n="legalTitle">Documents légaux par produit</h2>
+        <p data-i18n="legalText">Les documents légaux sont organisés par produit afin de refléter les usages, limites et politiques propres à chaque application.</p>
       </div>
-      <div class="legal-links">
-        <a class="legal-button" data-legal="privacy" href="https://prehosscanrx.github.io/prehos-rxscan-legal/privacy-fr.html" data-i18n="privacy">Politique de confidentialité</a>
-        <a class="legal-button" data-legal="terms" href="https://prehosscanrx.github.io/prehos-rxscan-legal/conditions-fr.html" data-i18n="terms">Conditions d'utilisation</a>
-        <a class="legal-button" data-legal="clinical" href="https://prehosscanrx.github.io/prehos-rxscan-legal/clinical-fr.html" data-i18n="clinical">Avertissement clinique</a>
+      <div class="legal-product-grid">
+        <article class="legal-product-card">
+          <div class="legal-card-header">
+            <h3>Préhos RxScan</h3>
+            <span class="status" data-i18n="availableStatus">Disponible</span>
+          </div>
+          <div class="legal-links">
+            <a class="legal-button" data-legal="privacy" href="https://prehosscanrx.github.io/prehos-rxscan-legal/privacy-fr.html" data-i18n="privacy">Politique de confidentialité</a>
+            <a class="legal-button" data-legal="terms" href="https://prehosscanrx.github.io/prehos-rxscan-legal/conditions-fr.html" data-i18n="terms">Conditions d'utilisation</a>
+            <a class="legal-button" data-legal="clinical" href="https://prehosscanrx.github.io/prehos-rxscan-legal/clinical-fr.html" data-i18n="clinical">Avertissement clinique</a>
+          </div>
+        </article>
+        <article class="legal-product-card muted-card">
+          <div class="legal-card-header">
+            <h3>Guide RxScan</h3>
+            <span class="status" data-i18n="comingSoonStatus">À venir</span>
+          </div>
+          <p data-i18n="guideLegalText">Les documents légaux de Guide RxScan seront publiés lorsque le produit avancera vers une phase de test ou de distribution.</p>
+        </article>
       </div>
     </section>
 
@@ -123,9 +161,28 @@
   </main>
 
   <footer class="footer">
-    <div>
-      <strong>RxScan Technologies Inc.</strong>
-      <span data-i18n="location">Québec, Canada</span>
+    <div class="footer-grid">
+      <div>
+        <h2 data-i18n="footerProducts">Produits</h2>
+        <a href="#products">Préhos RxScan</a>
+        <a href="#products">Guide RxScan</a>
+      </div>
+      <div>
+        <h2 data-i18n="footerCompany">Entreprise</h2>
+        <a href="#mission" data-i18n="navMission">Mission</a>
+        <a href="#about" data-i18n="navAbout">À propos</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </div>
+      <div>
+        <h2 data-i18n="footerLegal">Légal</h2>
+        <a href="#legal" data-i18n="footerLegalDocs">Documents légaux par produit</a>
+      </div>
+      <div>
+        <h2 data-i18n="footerContact">Coordonnées</h2>
+        <strong>RxScan Technologies Inc.</strong>
+        <span data-i18n="location">Québec, Canada</span>
+        <a href="mailto:contact@rxscantechnologies.ca">contact@rxscantechnologies.ca</a>
+      </div>
     </div>
     <p data-i18n="copyright">© 2026 RxScan Technologies Inc. Tous droits réservés.</p>
   </footer>
