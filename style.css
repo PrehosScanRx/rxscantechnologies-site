@@ -76,7 +76,14 @@ a {
 .brand {
   display: inline-flex;
   align-items: center;
-  width: 148px;
+  width: auto;
+}
+
+.brand img {
+  width: auto;
+  height: 56px;
+  max-width: 180px;
+  object-fit: contain;
 }
 
 .nav-menu {
@@ -539,8 +546,9 @@ h3 {
 }
 
 @media (max-width: 560px) {
-  .brand {
-    width: 132px;
+  .brand img {
+    height: 44px;
+    max-width: 142px;
   }
 
   .section {
