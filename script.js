@@ -42,6 +42,7 @@ const translations = {
     privacy: "Politique de confidentialité",
     terms: "Conditions d'utilisation",
     clinical: "Avertissement clinique",
+    warning: "Avertissement éducatif",
     contactLabel: "Contact",
     contactTitle: "Parlons de RxScan Technologies.",
     contactText: "Pour toute question concernant RxScan Technologies ou ses applications :",
@@ -96,6 +97,7 @@ const translations = {
     privacy: "Privacy policy",
     terms: "Terms of use",
     clinical: "Clinical disclaimer",
+    warning: "Educational warning",
     contactLabel: "Contact",
     contactTitle: "Let's talk about RxScan Technologies.",
     contactText: "For questions about RxScan Technologies or its applications:",
@@ -113,12 +115,18 @@ const legalLinks = {
   fr: {
     privacy: "https://rxscantechnologies.ca/legal/privacy-fr.html",
     terms: "https://rxscantechnologies.ca/legal/conditions-fr.html",
-    clinical: "https://rxscantechnologies.ca/legal/clinical-fr.html"
+    clinical: "https://rxscantechnologies.ca/legal/clinical-fr.html",
+    guidePrivacy: "legal/rxscan-guide/privacy-fr.html",
+    guideTerms: "legal/rxscan-guide/terms-fr.html",
+    guideWarning: "legal/rxscan-guide/warning-fr.html"
   },
   en: {
     privacy: "https://rxscantechnologies.ca/legal/privacy-en.html",
     terms: "https://rxscantechnologies.ca/legal/conditions-en.html",
-    clinical: "https://rxscantechnologies.ca/legal/clinical-en.html"
+    clinical: "https://rxscantechnologies.ca/legal/clinical-en.html",
+    guidePrivacy: "legal/rxscan-guide/privacy-en.html",
+    guideTerms: "legal/rxscan-guide/terms-en.html",
+    guideWarning: "legal/rxscan-guide/warning-en.html"
   }
 };
 
